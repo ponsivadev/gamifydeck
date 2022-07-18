@@ -1,0 +1,20 @@
+// style.scss
+@import '_variables.scss';
+
+@mixin bg-color($keppel: #00B99D) {
+    background: $keppel;
+    box-shadow: 0 0 1px rgba($keppel, .25);
+    color: #fff;
+}
+
+.bg-keppel {
+    @include bg-color;
+}
+
+.bg-orange-red-crayola {
+    @include bg-color($orange-red-crayola);
+}
+
+.success {
+    @include bg-color($theme: DarkGreen);
+}
